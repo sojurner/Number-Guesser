@@ -1,0 +1,233 @@
+ /* {
+  box-sizing:border-box;
+}
+*/
+header.H-BG {
+  background-color: #404041;
+  height: 150px;
+  width: 100%;
+}
+
+header.H-container {
+  padding: 0 0 0 0;
+}
+
+h1.title1 {
+  color: #ED458B;
+  font-family: sans-serif;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
+  left: 370px;
+  bottom: 30px;
+  font-size: 85px;
+  position: relative;
+  letter-spacing: 3px;
+}
+
+h1.title2 {
+  color: #E6E7E8;
+  font-family: sans-serif;
+  font-weight: 250;
+  display: inline-block;
+  left: 390px;
+  bottom: 30px;
+  font-size: 85px;
+  position: relative;
+}
+
+input[type="number"] {
+  font-size: 40px;
+}
+
+
+.InputBox {
+  padding-left: 30%;
+  padding-top: 5%;
+}
+
+#guessBox {
+  bottom: 20px;
+  top: 80px;
+  width: 44%;
+  height: 25px;
+  left: 380px;
+  position: relative;
+  padding: 1vw 1vw;
+}
+
+#guessBox::placeholder {
+  font-family: sans-serif;
+  font-size: 40px;
+  color: #D0D2D3; 
+  font-weight: 300;
+  position: relative;
+}
+
+#minNum {
+  width: 112px;
+  height: 35px;
+}
+
+#minNum::placeholder {
+  font-family: sans-serif;
+  font-size: 40px;
+  color: #D0D2D3; 
+  font-weight: 300;
+  position: relative;
+}
+
+#maxNum {
+  width: 130px;
+  height: 35px;
+}
+#maxNum::placeholder {
+  font-family: sans-serif;
+  font-size: 40px;
+  color: #D0D2D3; 
+  font-weight: 300;
+  position: relative;
+}
+
+
+#minMax {
+  position: relative;
+  bottom: 50px;
+  left: 500px;
+}
+
+#minMaxButton {
+  position: relative;
+  background-color: #929497;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  display: inline-block;
+  font-size: 40px;
+  cursor: pointer;
+  font-weight: 300;
+  border-radius: 30px;
+  width: 11%;
+  left: 15px;
+}
+
+#guessButton {
+  position: relative;
+  background-color: #929497;
+  border: none;
+  color: #ffffff;
+  padding: 0% 6% 0% 6%;
+  text-align: center;
+  display: inline-block;
+  font-size: 40px;
+  cursor: pointer;
+  font-weight: 300;
+  border-radius: 30px;
+  top: 200px;
+  height: 55px;
+  width: 300px;
+  right: 280px;
+}
+
+#guessButton:hover {
+  background-color: #EB008B
+}
+
+#guessButton:disabled{
+  background-color: #D0D2D3
+}  
+
+#clearButton {
+  display:inline-block;
+  background-color: #929497;
+  border: none;
+  color: #ffffff;
+  padding: 0% 6% 0 6%;
+  text-align: center;
+  display: inline-block;
+  font-weight: 300;
+  font-size: 40px;
+  height: 55px;
+  bottom: 15px;
+  cursor: pointer;
+  border-radius: 30px;
+  position: relative;
+  width: 300px;
+  right: 230px;
+  top: 200px;
+}
+
+#clearButton:hover {
+  background-color: #EB008B
+}
+
+#clearButton:disabled {
+  background-color: #D0D2D3
+}
+
+.NumberDisplay {
+  position: relative;
+  top: 90px;
+}
+
+#yourGuess {
+  font-family: sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  top: 250px;
+  left: 530px;  
+  letter-spacing: 1px;
+  position: relative;
+}
+
+#guessDisplay {
+  color: #ED458B;
+  font-family: sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 250px;
+  margin: 20px 0px 10px 0px;
+  top: 220px;
+  left: 5px;
+  position: relative;
+  letter-spacing: 2px;
+}
+
+#guessfeedback {
+  font-family: sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 40px;
+  top: 220px;
+  left: 5px;
+  position: relative;
+}
+
+#resetButton {
+  display:inline-block;
+  background-color: #929497;
+  border: none;
+  color: #ffffff;
+  padding: 0% 6% 0 6%;
+  text-align: center;
+  display: inline-block;
+  font-weight: 300;
+  font-size: 30px;
+  height: 45px;
+  cursor: pointer;
+  border-radius: 30px;
+  position: absolute;
+  width: 665px;
+  left: 377px;
+  top: 1000px;
+}
+
+
+
+#resetButton:hover { 
+  background-color: #EB008B
+}
+
+#resetButton:disabled { 
+  background-color: #D0D2D3
+}
