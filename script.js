@@ -11,34 +11,25 @@ var maxiNum = document.querySelector('#maxNum');
 var numberRange = document.querySelector('#numRange')
 var clearBtn = document.querySelector('#clearButton');
 var resetBtn = document.querySelector('#resetButton');
-
 //--------------
 //Calling Events
 //--------------
 //Parameter button click
-applyButton.addEventListener('click', function() {
-  numParaGen();
-})
+applyButton.addEventListener('click', numParaGen);
 //Guess button click 
-guessBtn.addEventListener('click', function() {
-  guessCompare();
-})
+guessBtn.addEventListener('click', guessCompare);
 
-clearBtn.addEventListener('click', function() {
-  clearPage();
-})
+userNum.addEventListener('input', dsblResetClearBtn);
 
-resetBtn.addEventListener('click', function() {
-  resetPage();
-})
+clearBtn.addEventListener('click', clearPage);
 
+resetBtn.addEventListener('click', resetPage);
 //----------------
 //Functions
 //----------------
 //enabling guess|clear button; linking users min|max#s as parameters for random number generator
 function numParaGen() {
   guessBtn.disabled = false; 
-  clearBtn.disabled = false;
   parseMin = parseInt(miniNum.value, 10) || 1;
   parseMax = parseInt(maxiNum.value, 10) || 100;
   numberRange.innerText = 'Pick a # between ' + parseMin + ' and ' + parseMax
@@ -79,7 +70,7 @@ function indexRange(n) {
   parseMin = parseMin - n;
   parseMax = parseMax + n;
 }  
-//Clearing 
+//Clearing fields
 function clearPage() {
   userNumDisplay.innerText = '';
   feedBackDisplay.innerText = '';
@@ -93,8 +84,20 @@ function resetPage() {
  location.reload();
 }
 
+//disable reset and clear button if no value in inputbox
+function dsblResetClearBtn() {
+  if (userNum.value.length < 1) { 
+      clearBtn.disabled = true; 
+      resetBtn.disabled = true; 
+  }   
+  else { 
+     clearBtn.disabled = false;
+     resetBtn.disabled = false;
+    }
+}
 
 
+//----------끝-------------
 
 
 
