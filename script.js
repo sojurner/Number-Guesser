@@ -47,7 +47,7 @@ function numParaGen() {
 }
 //Generating a Random Number
   function randNumGenerator() {
-    return Math.floor(Math.random() * (parseMax - parseMin) + 1);   
+    return Math.floor(Math.random() * (parseMax - parseMin + 1)) + parseMin;   
 }
 //enabling reset button; linking User's input guess to Display; calling function to compare user# to random# 
 function guessCompare () {
@@ -83,10 +83,9 @@ function indexRange(n) {
 function clearPage() {
   userNumDisplay.innerText = '';
   feedBackDisplay.innerText = '';
-  numberRange.innerText = ''
-  miniNum.value = '';
-  maxiNum.value = '';
-  userNum.value = '';
+  numberRange.innerText = '';
+  miniNum.value = null;
+  maxiNum.value = null;
   userNum.value = null;
 }
 //Reloads page

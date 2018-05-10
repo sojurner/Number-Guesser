@@ -13,17 +13,6 @@ h1 {
   font-size: 4.5em;  
 }
 
-fieldset {
-  border-radius: 25px;
-  color: #ED458B;
-  margin: auto;
-  width: 22em;
-}
-
-legend {
-  font-size: 1.5em;
-}
-
 /*Header*/
 header.H-BG {
   background-color: #404041;
@@ -43,7 +32,32 @@ h1.title2 {
   margin-left: .2em;
 }
 
-/*Minimum and Maximum input*/
+/*Input Field*/
+fieldset {
+  border-radius: 25px;
+  color: #ED458B;
+  margin: auto;
+  width: 22em;
+}
+
+legend {
+  font-size: 1.5em;
+}
+
+input {
+  border-color: #ED458B;
+}
+
+input[type="number"] {
+  color: #ED458B;
+  font-size: 1.5em;
+}
+
+input::placeholder {
+font-size: .8em;
+font-weight: 300;
+}
+
 #minNum{
   height: 1.2em;
   margin-right: .5em;
@@ -57,14 +71,9 @@ h1.title2 {
   width: 2.7em;
 }
 
-#minMaxButton {
-  bottom: 4px;
+#guessBox {
   height: 2em;
-  margin-left: .5em;
-  position: relative;
-  width: 4em;
 }
-
 
 /*Display and feedback*/ 
 #guessfeedback {
@@ -72,6 +81,7 @@ h1.title2 {
   height: .5em;
   margin: 0 0 2em 0;
 }
+
 #guessDisplay {
   color: #ED458B;
   font-size: 9em;
@@ -87,23 +97,7 @@ h1.title2 {
 }
 
 /*Input boxes*/
-input {
-  border-color: #ED458B;
-}
 
-#guessBox {
-  height: 2em;
-}
-
-input[type="number"] {
-  color: #ED458B;
-  font-size: 1.5em;
-}
-
-input::placeholder {
-font-size: .8em;
-font-weight: 300;
-}
 
 /*Buttons*/
 button {
@@ -130,6 +124,14 @@ button:disabled {
 
 button: active {
   background-color: #929497;
+}
+
+#minMaxButton {
+  bottom: 4px;
+  height: 2em;
+  margin-left: .5em;
+  position: relative;
+  width: 4em;
 }
 
 #guessButton {
