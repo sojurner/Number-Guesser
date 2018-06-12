@@ -1,4 +1,4 @@
-/*Universals*/
+
 * {
   font-family: sans-serif;
 }
@@ -13,7 +13,6 @@ h1 {
   font-size: 4.5em;  
 }
 
-/*Header*/
 header {
   background-color: #404041;
   height: 150px;
@@ -32,7 +31,6 @@ h1.title2 {
   margin-left: .2em;
 }
 
-/*Input Field*/
 fieldset {
   border-radius: 25px;
   color: #ED458B;
@@ -75,7 +73,7 @@ font-weight: 300;
   height: 2em;
 }
 
-/*Display and feedback*/ 
+ 
 #guessfeedback {
   font-size: 1.5em;
   height: .5em;
@@ -96,10 +94,6 @@ font-weight: 300;
   margin: .6em 0 0 0;
 }
 
-/*Input boxes*/
-
-
-/*Buttons*/
 button {
   background-color: #929497;
   border: none;
@@ -122,7 +116,7 @@ button:disabled {
   background-color: #D0D2D3
 }
 
-button: active {
+button:active {
   background-color: #929497;
 }
 
@@ -135,29 +129,28 @@ button: active {
 }
 
 #guessButton {
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
 
 #clearButton {
-  margin-left: .5em;
+  margin-left: 0.5em;
 }
 
-/*Extra stuff I look up*/
 @-webkit-keyframes borderBlink {    
-    from, to {    
-        border-color: #ED458B  
+  from, to {    
+    border-color: #ED458B  
     }    
     50% {    
-        border-color: black   
-    }    
+    border-color: black   
+  }    
 }    
 @keyframes borderBlink {    
-    from, to {    
-        border-color: #ED458B    
+  from, to {    
+    border-color: #ED458B    
     }    
     50% {    
-        border-color: black  
-    }    
+    border-color: black  
+  }    
 } 
    
 .borderBlink{    
