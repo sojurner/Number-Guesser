@@ -10,6 +10,6 @@
 * Guessing the correct number, will increment the minimum and maximum values by ten and generate a new Random Number.
 
 ## Technologies
-* javascript
+* Javascript
 * HTML5 / CSS3
 
